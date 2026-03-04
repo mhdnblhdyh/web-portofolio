@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Praktikum Minggu 3 - Layout</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ── NAVBAR ─────────────────────── -->
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <span class="logo-icon">&#9670;</span>
+        <span class="logo-text">Nabil Dev</span>
+      </div>
+
+      <button class="navbar__toggle" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path class="line line1" d="M3 6h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path class="line line2" d="M3 12h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path class="line line3" d="M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <ul class="navbar__links" id="navbarLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#about">Skills</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="navbar__cta">
+        <a href="https://wa.me/6281271787363" class="btn-primary" target="_blank" rel="noopener">Hire Me</a>
+      </div>
+    </nav>
+
+    <!-- ── HERO SECTION ────────────────── -->
+    <section class="hero" id="home">
+      <div class="hero-pattern"></div>
+      <div class="hero-glow"></div>
+      <div class="orb-2"></div>
+      <div class="orb-3"></div>
+      <div class="orb-4"></div>
+      <div class="orb-5"></div>
+      <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+      <div class="hero__content">
+        <span class="hero__badge">Information Systems Student</span>
+        <h1 class="hero__title">
+          Hi, I'm <span class="highlight">Nabil</span><br />
+          Web Developer
+        </h1>
+        <p class="hero__desc">
+          I am an Information Systems student at the University of Muhammadiyah North Sumatra
+          focused on building responsive websites and web-based applications
+          using HTML, CSS, JavaScript, and PHP.
+        </p>
+        <div class="hero__actions">
+          <a href="#portfolio" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-outline">Contact Me</a>
+        </div>
+      </div>
+    </section>
+    <!-- ── MAIN CONTENT SECTION (COMBINED) ───────────── -->
+    <section class="main-content" id="main">
+      <!-- Animated Orbs Background -->
+      <div class="section-orb section-orb-1"></div>
+      <div class="section-orb section-orb-2"></div>
+      <div class="section-orb section-orb-3"></div>
+      <div class="section-orb section-orb-4"></div>
+      <!-- Geometric Pattern Layer -->
+      <div class="texture-pattern"></div>
+      <!-- Floating Particles -->
+      <div class="particles-section">
+        <div class="section-particle"></div>
+        <div class="section-particle"></div>
+        <div class="section-particle"></div>
+        <div class="section-particle"></div>
+        <div class="section-particle"></div>
+        <div class="section-particle"></div>
+        <div class="section-particle"></div>
+        <div class="section-particle"></div>
+        <div class="section-particle"></div>
+        <div class="section-particle"></div>
+      </div>
+      
+<!-- About -->
+      <div class="container section-block section-modern-bg" id="about-me">
+        <div class="grid-overlay"></div>
+        <div class="bg-particles">
+          <div class="bg-particle"></div>
+          <div class="bg-particle"></div>
+          <div class="bg-particle"></div>
+          <div class="bg-particle"></div>
+          <div class="bg-particle"></div>
+          <div class="bg-particle"></div>
+        </div>
+        <div class="about__wrapper">
+          <div class="about__image">
+            <div class="about__image-container">
+              <img src="profile.jpg" alt="Mhd Nabil Hidayah Profile" onerror="this.src='https://ui-avatars.com/api/?name=Mhd+Nabil+Hidayah&background=C5ADC5&color=fff&size=200&font-size=0.4&bold=true'">
+              <div class="about__image-border"></div>
+            </div>
+            <div class="about__status">
+              <span class="status-dot"></span>
+              <span>Open to Work</span>
+            </div>
+          </div>
+          <div class="about__content">
+            <h2 class="about__greeting">Hello, I'm</h2>
+            <h1 class="about__name">Mhd Nabil Hidayah</h1>
+            <p class="about__title">Information Systems Student & Web Developer</p>
+            <p class="about__description">I am an Information Systems student at the University Muhammadiyah of North Sumatra with a strong interest in software development, backend engineering, cloud computing, and artificial intelligence.</p>
+            <div class="about__stats">
+              <div class="about__stat">
+                <span class="stat-number">4+</span>
+                <span class="stat-label">Years Learning</span>
+              </div>
+              <div class="about__stat">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="about__stat">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Certificates</span>
+              </div>
+            </div>
+            <div class="about__cta">
+              <a href="CURRICULUM VITAE.pdf" class="btn-primary" target="_blank">My CV</a>
+              <a href="#portfolio" class="btn-outline">View Projects</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div class="container section-block section-modern-bg" id="experience">
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-subtitle">My work experience and internships</p>
+        <div class="experience__grid">
+          <div class="experience-card">
+            <h3>💼 Technical Intern – CV. AJ Com</h3>
+            <p class="experience-date">August 3 2022 – October 31 2022</p>
+            <ul>
+              <li>Windows operating system installation</li>
+              <li>Customer document management</li>
+              <li>Wi-Fi network installation</li>
+            </ul>
+          </div>
+          <div class="experience-card">
+            <h3>💼 Intern – PT INALUM (BUMN)</h3>
+            <p class="experience-date">Procurement Department — Vendor and Procurement Planning Section (SPV)<br>April 3 2023 – July 3 2023</p>
+            <ul>
+              <li>Vendor document administration and verification</li>
+              <li>Supporting procurement planning and reporting for goods and services</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificates -->
+      <div class="container section-block certificates section-modern-bg" id="certificates">
+        <h2 class="section-title">Certificates</h2>
+        <p class="section-subtitle">Certificates and awards</p>
+        <p class="cert-instruction">Click image or button to enlarge</p>
+        <div class="certificates__grid">
+          <figure>
+            <img src="aj.com.jpg" alt="CV AJ Com Certificate" class="certificate-img cert-img" data-src="aj.com.jpg" />
+            <button class="cert-open" data-src="aj.com.jpg" aria-label="Enlarge Certificate">Enlarge</button>
+            <figcaption>CV. AJ Com Certificate</figcaption>
+          </figure>
+          <figure>
+            <img src="INALUM.jpg" alt="PT INALUM Certificate" class="certificate-img cert-img" data-src="INALUM.jpg" />
+            <button class="cert-open" data-src="INALUM.jpg" aria-label="Enlarge Certificate">Enlarge</button>
+            <figcaption>PT INALUM Certificate</figcaption>
+          </figure>
+          <figure>
+            <img src="lsp.jpg" alt="Junior Web Developer Certification — LSP Nusantara" class="certificate-img cert-img" data-src="lsp.jpg" />
+            <button class="cert-open" data-src="lsp.jpg" aria-label="Enlarge Certificate">Enlarge</button>
+            <figcaption>Junior Web Developer Certification — LSP Nusantara</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Lightbox modal for certificate preview -->
+      <div id="lightbox" class="lightbox" aria-hidden="true">
+        <div class="lightbox__backdrop" data-close="true"></div>
+        <div class="lightbox__panel" role="dialog" aria-modal="true">
+          <button class="lightbox__close" aria-label="Close">×</button>
+          <img src="" alt="" class="lightbox__img" />
+          <p class="lightbox__caption"></p>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="container section-block skills section-modern-bg" id="about">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-subtitle">Technologies I master</p>
+        <div class="skills__grid">
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h3>HTML5</h3>
+            <p>Creating clean, semantic, and well-organized website structures.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <h3>CSS3</h3>
+            <p>Using Flexbox & Grid to create modern and responsive layouts.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <i class="fab fa-js"></i>
+            </div>
+            <h3>JavaScript</h3>
+            <p>Creating interactive features and DOM manipulation for web applications.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <i class="fab fa-php"></i>
+            </div>
+            <h3>PHP & MySQL</h3>
+            <p>Developing web applications such as LMS and database-based laundry systems.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <h3>Git & GitHub</h3>
+            <p>Managing code versions and project collaboration in a structured way.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card__icon">
+              <i class="fab fa-figma"></i>
+            </div>
+            <h3>Basic UI/UX</h3>
+            <p>Designing clean, modern, and user-friendly website interfaces.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio -->
+      <div class="container section-block section-modern-bg" id="portfolio">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">Projects I've worked on</p>
+        <div class="portfolio__grid">
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="laundry.png" alt="Website Company Profile">
+            </div>
+            <div class="portfolio-content">
+               <h3>Website Laundry</h3>
+              <p>Modern and responsive website for a startup company with professional design and clean UI.</p>
+              <button class="btn-outline project-btn" data-project="company">View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="lms.png" alt="Website LMS">
+            </div>
+            <div class="portfolio-content">
+              <h3>Website LMS</h3>
+              <p>Web-based learning system with teacher & student login features, class management, material upload, assignments, and grading.</p>
+              <button class="btn-outline project-btn" data-project="lms">View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <div class="portfolio-image">
+              <img src="e-learning.png" alt="E-Learning SMK">
+            </div>
+            <div class="portfolio-content">
+              <h3>RPL E-Learning Media</h3>
+              <p>Digital learning media for RPL department that facilitates material and assignment distribution online.</p>
+              <button class="btn-outline project-btn" data-project="elearning">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Modal -->
+      <div id="projectModal" class="project-modal" aria-hidden="true">
+        <div class="project-modal__backdrop" data-close="true"></div>
+        <div class="project-modal__panel" role="dialog" aria-modal="true">
+          <button class="project-modal__close" aria-label="Close">&times;</button>
+          <div class="project-modal__content">
+            <img src="" alt="" class="project-modal__img" />
+            <h3 class="project-modal__title"></h3>
+            <div class="project-modal__tech"></div>
+            <p class="project-modal__desc"></p>
+            <div class="project-modal__features">
+              <h4>Key Features:</h4>
+              <ul></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="container section-block contact section-modern-bg" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Feel free to contact me for any questions or collaboration</p>
+        <div class="contact__wrapper">
+          <div class="contact__form-container">
+            <form class="contact__form" action="mailto:mhdnabilhidayah@gmail.com" method="post" enctype="text/plain">
+              <div class="form__group">
+                <label for="name" class="form__label">Name</label>
+                <input type="text" id="name" name="name" class="form__input" placeholder="Your name" required>
+              </div>
+              <div class="form__group">
+                <label for="email" class="form__label">Email</label>
+                <input type="email" id="email" name="email" class="form__input" placeholder="your@email.com" required>
+              </div>
+              <div class="form__group">
+                <label for="message" class="form__label">Message</label>
+                <textarea id="message" name="message" class="form__input form__textarea" placeholder="Your message..." rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn-primary contact__submit">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div class="contact__cards">
+            <div class="contact__item">
+              <div class="contact__icon email">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="contact__info">
+                <h3>Email</h3>
+                <a href="mailto:mhdnabilhidayah@gmail.com">mhdnabilhidayah@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact__item">
+              <div class="contact__icon whatsapp">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.498 14.382C17.304 14.382 16.958 14.35 16.613 14.35C15.283 14.35 14.152 13.219 14.152 11.889C14.152 10.56 15.283 9.429 16.613 9.429C17.943 9.429 19.074 10.56 19.074 11.889C19.074 13.219 17.943 14.35 17.498 14.35Z" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M12.104 14.382C11.91 14.382 11.564 14.35 11.219 14.35C9.889 14.35 8.758 13.219 8.758 11.889C8.758 10.56 9.889 9.429 11.219 9.429C12.549 9.429 13.68 10.56 13.68 11.889C13.68 13.219 12.549 14.35 12.104 14.35Z" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M17.557 20.063C16.596 21.138 15.096 21.775 13.48 21.775C10.472 21.775 8.001 19.304 8.001 16.296C8.001 13.288 10.472 10.817 13.48 10.817C14.556 10.817 15.566 11.142 16.43 11.705C16.865 11.962 17.143 12.477 17.143 13.036V13.089C17.143 13.656 16.864 14.17 16.428 14.427L17.557 20.063Z" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M17.557 20.063C16.596 21.138 15.096 21.775 13.48 21.775C10.472 21.775 8.001 19.304 8.001 16.296C8.001 13.288 10.472 10.817 13.48 10.817C15.143 10.817 16.683 11.527 17.754 12.76L21.001 11.012L19.263 14.259C20.496 15.33 21.206 16.87 21.206 18.533C21.206 19.953 20.496 21.279 19.263 21.775" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="contact__info">
+                <h3>WhatsApp</h3>
+                <a href="https://wa.me/6281271787363" target="_blank" rel="noopener">+62 812-7178-7363</a>
+              </div>
+            </div>
+            <div class="contact__item">
+              <div class="contact__icon linkedin">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2" y="2" width="20" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+                  <path d="M7 11V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M7 7V7.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M11 17V13C11 11.8954 11.8954 11 13 11C14.1046 11 15 11.8954 15 13V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M11 11V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="contact__info">
+                <h3>LinkedIn</h3>
+                <a href="https://linkedin.com/in/mhd-nabil-hidayah-8a4116334" target="_blank" rel="noopener">linkedin.com/in/mhd-nabil-hidayah-8a4116334</a>
+              </div>
+            </div>
+            <div class="contact__item">
+              <div class="contact__icon github">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 19C4.995 19 2 15.935 2 12C2 8.065 4.5 5.5 7.5 4.5C8.25 4.5 9 4.75 9 5V3.5C9 2.67 9.67 2 10.5 2C11.33 2 12 2.67 12 3.5V4.5C12 4.5 12.5 4.5 13 4.5C14.5 4.5 16 5.5 16 8C16 9.885 15.5 11.5 14.5 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15.5 11C17.985 11 20 12.985 20 15.5C20 17.355 18.905 18.945 17.25 19.5C17.1 19.55 17 19.42 17 19.25V18.25C17 17.655 16.605 17.16 16.105 17.06C15.605 16.96 15.19 17.26 15.05 17.45C14.91 17.64 14.75 17.83 14.58 17.98C14.41 18.13 14.21 18.25 14.01 18.25C13.71 18.25 13.43 18.1 13.27 17.85C12.87 17.27 12.21 16.95 11.5 16.95C10.79 16.95 10.13 17.27 9.73 17.85C9.57 18.1 9.29 18.25 8.99 18.25C8.79 18.25 8.59 18.13 8.42 17.98C8.25 17.83 8.09 17.64 7.95 17.45C7.81 17.26 7.395 16.96 6.895 17.06C6.395 17.16 6 17.655 6 18.25V19.25C6 19.42 5.9 19.55 5.75 19.5C4.095 18.945 3 17.355 3 15.5C3 12.985 5.015 11 8.5 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="contact__info">
+                <h3>GitHub</h3>
+                <a href="https://github.com/mhdnblhdyh" target="_blank" rel="noopener">github.com/mhdnblhdyh</a>
+              </div>
+            </div>
+            <div class="contact__item">
+              <div class="contact__icon instagram">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="18" cy="6" r="1" fill="currentColor"/>
+                </svg>
+              </div>
+              <div class="contact__info">
+                <h3>Instagram</h3>
+                <a href="https://instagram.com/nblhdyh_" target="_blank" rel="noopener">instagram.com/nblhdyh_</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script>
+      // Certificate Lightbox Functionality
+      (function(){
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = lightbox.querySelector('.lightbox__img');
+        const lightboxCaption = lightbox.querySelector('.lightbox__caption');
+        const lightboxClose = lightbox.querySelector('.lightbox__close');
+
+        function openLightbox(src, caption) {
+          lightboxImg.src = src;
+          lightboxImg.alt = caption;
+          lightboxCaption.textContent = caption;
+          
+          lightbox.classList.add('open');
+          lightbox.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+          lightbox.classList.remove('open');
+          lightbox.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        }
+
+        // Add click event to all cert-open buttons
+        document.querySelectorAll('.cert-open').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const src = btn.dataset.src;
+            const caption = btn.closest('figure').querySelector('figcaption').textContent;
+            openLightbox(src, caption);
+          });
+        });
+
+        // Add click event to certificate images
+        document.querySelectorAll('.cert-img').forEach(img => {
+          img.style.cursor = 'pointer';
+          img.addEventListener('click', () => {
+            const src = img.dataset.src;
+            const caption = img.closest('figure').querySelector('figcaption').textContent;
+            openLightbox(src, caption);
+          });
+        });
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', (e) => {
+          if(e.target.dataset && e.target.dataset.close === 'true') closeLightbox();
+        });
+        document.addEventListener('keydown', (e) => {
+          if(e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+        });
+      })();
+
+      // Project Modal Functionality
+      (function(){
+        const projectModal = document.getElementById('projectModal');
+        const modalCloseBtn = projectModal.querySelector('.project-modal__close');
+        const modalImg = projectModal.querySelector('.project-modal__img');
+        const modalTitle = projectModal.querySelector('.project-modal__title');
+        const modalTech = projectModal.querySelector('.project-modal__tech');
+        const modalDesc = projectModal.querySelector('.project-modal__desc');
+        const modalFeatures = projectModal.querySelector('.project-modal__features ul');
+
+        const projectData = {
+          company: {
+            title: "Website Rumah Laundry",
+            image: "laundry.png",
+            tech: ["HTML5", "CSS3", "JavaScript", "PHP"],
+            desc: "Modern and responsive laundry management system website with online ordering features, laundry status tracking, and WhatsApp notification system. Equipped with admin dashboard to manage orders, customers, and financial reports.",
+            features: [
+              "24/7 online ordering system",
+              "WhatsApp notification integration",
+              "Admin dashboard for management",
+              "Real-time laundry status tracking",
+              "Automatic financial reports",
+              "Responsive design for all devices"
+            ]
+          },
+          lms: {
+            title: "Website LMS (Learning Management System)",
+            image: "lms.png",
+            tech: ["PHP", "MySQL", "HTML5", "CSS3", "JavaScript"],
+            desc: "A comprehensive web-based learning management system with separate portals for teachers and students. Features include class management, material uploads, assignments, and grading system.",
+            features: [
+              "Teacher & Student login system",
+              "Class management dashboard",
+              "File/material upload system",
+              "Assignment creation and submission",
+              "Grading and feedback system",
+              "Progress tracking"
+            ]
+          },
+          elearning: {
+            title: "RPL E-Learning Media",
+            image: "e-learning.png",
+            tech: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"],
+            desc: "Digital learning media platform designed specifically for RPL (Rekayasa Perangkat Lunak) department. Facilitates online learning with material distribution and assignment management.",
+            features: [
+              "Subject/Course management",
+              "Online material distribution",
+              "Assignment submission system",
+              "Teacher-student interaction",
+              "Gradebook functionality",
+              "Announcement system"
+            ]
+          }
+        };
+
+        function openProjectModal(projectId) {
+          const data = projectData[projectId];
+          if (!data) return;
+
+          modalImg.src = data.image;
+          modalImg.alt = data.title;
+          modalTitle.textContent = data.title;
+          modalDesc.textContent = data.desc;
+          
+          modalTech.innerHTML = data.tech.map(t => 
+            `<span class="tech-tag">${t}</span>`
+          ).join('');
+
+          modalFeatures.innerHTML = data.features.map(f => 
+            `<li>${f}</li>`
+          ).join('');
+
+          projectModal.classList.add('open');
+          projectModal.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+          modalCloseBtn.focus();
+        }
+
+        function closeProjectModal() {
+          projectModal.classList.remove('open');
+          projectModal.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        }
+
+        document.querySelectorAll('.project-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const projectId = btn.dataset.project;
+            openProjectModal(projectId);
+          });
+        });
+
+        modalCloseBtn.addEventListener('click', closeProjectModal);
+        projectModal.addEventListener('click', (e) => {
+          if(e.target.dataset && e.target.dataset.close === 'true') closeProjectModal();
+        });
+        document.addEventListener('keydown', (e) => {
+          if(e.key === 'Escape' && projectModal.classList.contains('open')) closeProjectModal();
+        });
+      })();
+
+      // Navbar toggle
+      (function(){
+        const toggle = document.querySelector('.navbar__toggle');
+        const links = document.getElementById('navbarLinks');
+
+        if(!toggle || !links) return;
+
+        toggle.addEventListener('click', () => {
+          const isOpen = links.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          toggle.classList.toggle('is-active', isOpen);
+        });
+
+        links.querySelectorAll('a').forEach(a => {
+          a.addEventListener('click', () => {
+            if(links.classList.contains('open')){
+              links.classList.remove('open');
+              toggle.setAttribute('aria-expanded','false');
+              toggle.classList.remove('is-active');
+            }
+          });
+        });
+      })();
+    </script>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <span class="footer__brand">&#9670; Nabil Dev</span>
+          <p class="footer__copy">
+            &copy; 2026 Nabil. Information Systems Student at UMSU.
+          </p>
+          <div class="footer__links">
+            <a href="#home">Home</a>
+            <a href="#experience">Experience</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#about">Skills</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>
