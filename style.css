@@ -9,6 +9,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -279,7 +280,6 @@ a {
   background-size: 50px 50px;
   z-index: 2;
   opacity: 0.4;
-  /* Removed animation to fix the line issue */
 }
 
 /* Animated grid effect */
@@ -507,11 +507,9 @@ a {
   padding-bottom: 80px;
   margin-bottom: 0;
   position: relative;
-  /* Reset any potential box effects */
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  overflow: visible !important;
 }
 
 .section-block:last-child {
@@ -519,7 +517,6 @@ a {
   margin-bottom: 0;
 }
 
-/* Extra spacing between sections - REDUCED for seamless background */
 .section-block + .section-block {
   margin-top: 0;
   padding-top: 0;
@@ -551,9 +548,7 @@ a {
   bottom: 0;
   min-height: 100vh;
   background: 
-    /* Subtle noise texture */
     url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),
-    /* Gradient mesh - multiple color stops */
     linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #0d0d1a 100%),
     radial-gradient(ellipse at 20% 20%, rgba(167, 139, 250, 0.15) 0%, transparent 50%),
     radial-gradient(ellipse at 80% 80%, rgba(236, 72, 153, 0.1) 0%, transparent 50%),
@@ -562,7 +557,6 @@ a {
   opacity: 0.2;
   z-index: -4;
   pointer-events: none;
-  /* Animation disabled to fix hero line issue */
 }
 
 @keyframes gradientMesh {
@@ -587,7 +581,6 @@ a {
   background-image: 
     radial-gradient(circle at 25% 25%, rgba(167, 139, 250, 0.03) 0%, transparent 50%),
     radial-gradient(circle at 75% 75%, rgba(236, 72, 153, 0.03) 0%, transparent 50%),
-    /* Dot pattern */
     radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
   background-size: 100% 100%, 100% 100%, 30px 30px;
   background-position: 0 0, 0 0, 0 0;
@@ -880,7 +873,6 @@ a {
 /* ── SHARED MODERN SECTION STYLES (One unified background) ─────────── */
 .section-modern-bg {
   position: relative;
-  overflow: visible;
   background: transparent !important;
 }
 
@@ -991,31 +983,6 @@ a {
   50% { opacity: 0.5; }
 }
 
-/* Section background - REMOVED for clean unified look */
-/*
-.section-modern-bg .section-bg {
-  position: absolute;
-  top: -50px;
-  left: -50px;
-  right: -50px;
-  bottom: -50px;
-  background: 
-    radial-gradient(ellipse at 20% 30%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 70%, rgba(74, 85, 104, 0.3) 0%, transparent 50%),
-    linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #0d0d1a 100%);
-  z-index: -1;
-}
-...
-
-.section-modern-bg .section-pattern {
-  ...
-}
-
-.section-modern-bg .grid-pattern {
-  ...
-}
-*/
-
 /* Override text colors for dark sections */
 .section-modern-bg .section-title {
   color: #ffffff;
@@ -1065,11 +1032,8 @@ a {
 #about-me {
   padding: 160px 0 120px;
   margin-top: 0;
-  /* Add subtle separator from hero */
   border-top: 1px solid rgba(255, 255, 255, 0.05);
-  /* Fix background clipping */
   position: relative;
-  overflow: visible;
 }
 
 /* Hapus outline dari SEMUA element di dalam about section */
@@ -1476,8 +1440,6 @@ a {
   padding: 80px 0;
   margin-top: 40px;
   position: relative;
-  /* Changed from hidden to visible for seamless background */
-  overflow: visible !important;
 }
 
 /* Override section title colors for dark background */
@@ -1739,33 +1701,6 @@ a {
   padding: 120px 0;
 }
 
-/* Hapus efek orb yang menyebabkan kotak */
-/*
-.skills::before {
-  content: '';
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  top: -150px;
-  left: -100px;
-  background: radial-gradient(circle, rgba(197, 173, 197, 0.2) 0%, transparent 70%);
-  filter: blur(80px);
-  animation: skillsOrb1 15s ease-in-out infinite;
-}
-
-.skills::after {
-  content: '';
-  position: absolute;
-  width: 350px;
-  height: 350px;
-  bottom: -150px;
-  right: -100px;
-  background: radial-gradient(circle, rgba(178, 181, 224, 0.2) 0%, transparent 70%);
-  filter: blur(70px);
-  animation: skillsOrb2 18s ease-in-out infinite reverse;
-}
-*/
-
 @keyframes skillsOrb1 {
   0%, 100% { transform: translate(0, 0) scale(1); }
   50% { transform: translate(30px, 30px) scale(1.1); }
@@ -1948,8 +1883,6 @@ a {
   padding: 120px 0;
   margin-bottom: 80px;
   position: relative;
-  /* Changed from hidden to visible for seamless background */
-  overflow: visible !important;
   background: transparent !important;
 }
 
@@ -1966,7 +1899,6 @@ a {
 .experience {
   padding: 160px 0;
   margin-top: -1px;
-  /* border-top and border-bottom removed for clean sections */
 }
 
 /* Experience Grid */
@@ -2125,7 +2057,6 @@ a {
 /* Certificates gallery (CONNECTED) */
 .certificates {
   padding: 120px 0;
-  /* border-top and border-bottom removed for clean sections */
 }
 
 .certificates__grid {
@@ -2248,7 +2179,6 @@ a {
   box-shadow: 0 8px 25px rgba(197, 173, 197, 0.4);
 }
 
-/* Certificate open button */
 .cert-open{
   position: absolute;
   right: 10px;
@@ -2637,7 +2567,6 @@ a {
   }
 
   .navbar__links {
-    /* controlled via opacity/transform so we can animate open/close */
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -2680,88 +2609,4 @@ a {
     gap: 18px;
   }
   .certificates__grid {
-    grid-template-columns: 1fr;
-  }
-  .certificate-img {
-    padding-bottom: 56%;
-  }
-}
-
-/* Additional mobile navbar positioning and behavior */
-@media (max-width: 767px) {
-  .navbar {
-    padding: 0 20px;
-    flex-wrap: wrap;
-    height: auto;
-    min-height: 64px;
-    padding-bottom: 12px;
-  }
-
-  /* Logo stays at top left */
-  .navbar__logo {
-    order: 1;
-  }
-
-  /* CTA (Hire Me) stays at top right */
-  .navbar__cta {
-    order: 2;
-    display: flex;
-    margin-left: auto;
-    margin-top: 0;
-  }
-
-  .navbar__cta .btn-primary {
-    width: auto;
-    display: inline-block;
-    text-align: center;
-    padding: 8px 16px;
-    border-radius: 8px;
-    font-size: 0.85rem;
-  }
-
-  /* Hamburger menu at top right - below Hire Me */
-  .navbar__toggle { 
-    display: block;
-    position: absolute;
-    top: 64px;
-    right: 20px;
-    z-index: 1001;
-  }
-
-  .navbar__links{
-    position: absolute;
-    top: 64px;
-    left: 20px;
-    right: 60px;
-    background: linear-gradient(180deg, rgba(26,26,46,0.98), rgba(26,26,46,0.95));
-    padding: 12px;
-    border-radius: 10px;
-    box-shadow: 0 12px 30px rgba(2,6,23,0.45);
-    min-width: auto;
-    z-index: 999;
-  }
-
-  .navbar__links a{
-    color: #fff;
-    padding: 8px 6px;
-    display: block;
-  }
-
-  .navbar__links.open{
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-  }
-}
-
-/* make portfolio images display properly on all devices */
-.portfolio-image {
-  height: 180px;
-}
-
-.portfolio-image img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
+    grid-template-columns: 
