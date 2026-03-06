@@ -517,9 +517,10 @@ a {
   margin-bottom: 0;
 }
 
-.section-block + .section-block {
-  margin-top: 0;
-  padding-top: 0;
+/* Add extra spacing specifically between experience and certificates */
+#experience + .certificates,
+.certificates {
+  padding-top: 120px;
 }
 
 /* Extra spacing between Hero and About sections */
@@ -2054,9 +2055,11 @@ a {
   transform: translateY(-1px);
 }
 
+
 /* Certificates gallery (CONNECTED) */
 .certificates {
-  padding: 120px 0;
+  padding: 80px 0;
+  margin-top: 0;
 }
 
 .certificates__grid {
